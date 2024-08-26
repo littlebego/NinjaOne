@@ -1,9 +1,7 @@
 # NinjaOne
-This is a series of helper functions I've written for interacting with the NinjaOne API.
-I made this to be used on an in-house server to automate certain documentation tasks.
+This is a series of helper functions I've written for interacting with the NinjaOne API. I made this to be used on an in-house server to automate certain documentation tasks.
 
-Note: This is only for use on a single, in-house server to run scripts that talk to the API. I use it to automate global knowledgebase articles, WYSIWYG fields, etc.
-      It's also pretty barebones, for example, I don't have support for anything other than the US instance. I'm more or less documenting this for my own use.
+Note: This is only for use on a single, in-house server to run scripts that talk to the API. I use it to automate global knowledgebase articles, WYSIWYG fields, etc. It's also pretty barebones: for example, I don't have support for anything other than the US instance. I'm more or less documenting this for my own use.
 
 Here are some basic instructions on how to use it:
 
