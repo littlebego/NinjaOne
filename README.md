@@ -35,6 +35,7 @@ Ninja Setup:
    
 Actually Using It:
 When creating a new Powershell script in Ninja, make sure to add this to the top of your script:
+
 . 'C:/Scripting/NinjaOne/NinjaOne.ps1'
 
 Then, you intialize the connection like so:
