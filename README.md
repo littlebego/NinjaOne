@@ -3,9 +3,7 @@ This is a series of helper functions I've written for interacting with the Ninja
 
 Note: This is only for use on a single, in-house server to run scripts that talk to the API. I use it to automate global knowledgebase articles, WYSIWYG fields, etc. It's also pretty barebones: for example, I don't have support for anything other than the US instance. I'm more or less documenting this for my own use.
 
-Here are some basic instructions on how to use it:
-
-Ninja Setup:
+<h2>Ninja Setup:</h2>
 1. Go to Administration > Devices > Role Custom Fields
 2. Create two new secure fields:
    - Client ID (clientId)
@@ -33,17 +31,18 @@ Ninja Setup:
 14. Copy the NinjaOne.ps1 script from this repository and put it on your server, for my examples, it's in:
     - C:\Scripting\NinjaOne\NinjaOne.ps1
    
-Actually Using It:
+<h2>Scripting:</h2>
 When creating a new Powershell script in Ninja, make sure to add this to the top of your script:
 
-. 'C:/Scripting/NinjaOne/NinjaOne.ps1'
+	. 'C:/Scripting/NinjaOne/NinjaOne.ps1'
 
-Then, you intialize the connection like so:
+Then, you intialize the connection:
 
-$clientId = Ninja-Property-Get clientId
-$clientSecret = Ninja-Property-Get clientSecret
-Connect-NinjaOne $clientId $clientSecret
+	$clientId = Ninja-Property-Get clientId<br>
+	$clientSecret = Ninja-Property-Get clientSecret<br>
+	Connect-NinjaOne $clientId $clientSecret<br>
 
 Now that you're connected, you can do things like this:
-$orgs = Get-Organizations
-Write-Output $orgs[0] #just to see an example of what it looks like.
+   
+	$orgs = Get-Organizations
+	Write-Output $orgs[0]
