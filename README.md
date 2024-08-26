@@ -1,2 +1,2 @@
-# ninjaone
+# NinjaOne
 NinjaOne
