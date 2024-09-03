@@ -3,7 +3,7 @@ This is a series of helper functions I've written for interacting with the Ninja
 
 Note: This is only for use on a single, in-house server to run scripts that talk to the API. I use it to automate global knowledgebase articles, WYSIWYG fields, etc. It's also pretty barebones: for example, I don't have support for anything other than the US instance. I'm more or less documenting this for my own use.
 
-<h2>Ninja Setup:</h2>
+## Ninja Setup:
 1. Go to Administration > Devices > Role Custom Fields
 2. Create two new secure fields:
    - Client ID (clientId)
@@ -31,7 +31,7 @@ Note: This is only for use on a single, in-house server to run scripts that talk
 14. Copy the NinjaOne.ps1 script from this repository and put it on your server, for my examples, it's in:
     - C:\Scripting\NinjaOne\NinjaOne.ps1
    
-<h2>Scripting:</h2>
+## Scripting:
 When creating a new Powershell script in Ninja, make sure to add this to the top of your script:
 
 	. 'C:/Scripting/NinjaOne/NinjaOne.ps1'
